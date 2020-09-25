@@ -1,0 +1,299 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	font-family:"SeoulNamsanM";
+	src: url("../font/SeoulNamsanM.ttf");
+	
+}
+body{
+			background-color: #658361;
+			padding: 0px;
+			margin: 0px;
+		}
+		/* 큰 틀 */
+		.parent{
+			position: relative;
+			width:100%;
+			height:100%;
+		}
+		/* 로고 틀 */ 
+		.logo{
+			position: relative;
+			width:1200px;
+			height:100px;
+			margin: 0 auto;
+			border:0px solid black;
+			
+		}
+		/* 로고 */
+		.logo1{
+			position:absolute;
+			width: 400px;
+			height: 200px;
+			border: 0px solid black;
+			margin: 30px 0 0 450px
+				;
+		}
+		
+		
+		/* 검색 */
+		.search{
+    position: absolute;
+    border: 0px solid black;
+    margin: 404px 0 0 275px;
+    left: 55px;
+    top: 27px;
+		}
+		.search_icon_div{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 0px solid black;
+    margin: 405px 0 0 580px;
+    left: 507px;
+    top: 26px;
+		}
+		.search_icon_img{
+			width: 100%;
+			height: 100%;
+		}
+		/* 메뉴 */
+		.menu{
+			position: relative;
+			width:1200px;
+			height:150px;
+			margin: 0px auto;
+			border: 0px solid black;
+		
+		}
+		.menu1{
+			position: absolute;
+			width:235px;
+			height:70px;
+			border: 0px solid black;
+			margin: 55px 0 0 250px;
+		} 
+		.menu2{
+			position: absolute;
+			width:235px;
+			height:70px;
+			border: 0px solid black;
+			margin: 55px 0 0 485px;
+		}		
+		.menu3{
+			position: absolute;
+			width:235px;
+			height:70px;
+			border: 0px solid black;
+			margin: 55px 0 0 720px
+		}		
+		.menu4{
+			position: absolute;
+			width:235px;
+			height:70px;
+			border: 0px solid black;
+			margin: 55px 0 0 955px;
+		}	
+		.menu5{
+			position: absolute;
+			width:235px;
+			height:70px;
+			border: 0px solid black;
+			margin: 55px 0 0 1190px;
+		}
+		/* 메인 */
+		.main{
+			position: relative;
+			width:1200px;
+			height:850px;
+			border: 0px solid black;
+			margin: 50px auto;
+			
+		}
+		.main1{
+			position: absolute;
+			width:900px;
+			height:300px;
+			border: 0px solid black;
+			margin-left: 325px;
+			margin-top: 485px;
+			float: left;
+		}
+		.main2{
+			position: absolute;
+			width: 350px;
+			height: 300px;
+			border: 0px solid black;
+			margin-top: 50px;
+			margin-left: 800px;
+		}
+		.main3{
+			position: absolute;
+			width:350px;
+			height:300px;
+			border: 0px solid black;
+			margin-left: 400px;
+			margin-top: 400px;
+		}
+		.main4{
+			position: absolute;
+			width: 350px;
+			height: 300px;
+			border: 0px solid black;
+			margin-top: 400px;
+			margin-left: 800px;
+		}
+		.main_slide{
+    position: absolute;
+    width: 300px;
+    height: 650px;
+    border: 1px solid black;
+    margin-left: 50px;
+    margin-top: 50px;
+    display: block;
+   float: left;
+    left: 6px;
+    top: -6px;			
+		}
+		/* 뒷 배경 */
+		.main_bg{
+			position: absolute;
+			width: 100%;
+			height: 950px;
+			background: \
+		}
+		/* 푸터 */
+		.footer{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-color: #000000;
+    background-color: rgba( 255, 255, 255, 0 );
+    color: #B8B8B8;
+    font-size: 8pt;
+    left: 4px;
+    top: 921px;			
+		}
+	
+		
+		@keyframes scroller{
+			0% { transform: translateX(0); }
+            33% { transform: translateX(-300px); }
+            66% { transform: translateX(-600px); }
+            100% { transform: translateX(0); }
+			
+		}
+		.main_slider{
+			width:300px;
+			height:650px;
+			overflow: hidden;
+			border:0px solid black;
+	
+		}
+		.slide{
+			width:300px;
+			height:650px;
+			float: left;
+			position: relative;
+			
+		}
+		.slide_main{
+			 width: 400%;
+			
+			 animation: scroller 30s infinite;
+    position: relative;
+		}
+	
+		.main_gong{
+			position: absolute;
+			width:810px;
+			height:425px;
+			border:0px solid black;
+			float: left;
+			margin-left: 325px;
+			overflow: hidden;
+		}
+		/* 메인이미지의 전체 */
+		.main_banner{
+			width:400%;
+			animation: main 15s infinite;
+			position: relative;
+			float: left;
+			
+		}
+		/* 이미지 하나하나의 값 */
+		.main_banner_1{
+			width:810px;
+			height:425px;
+			float: left;
+			position: relative;
+			
+			
+		} /* 가운데 애니메이션  */
+		@keyframes main{
+			0%   {transform: translateX(0);}
+			33%  {transform: translateX(-815px);}
+			66%  {transform: translateX(-1630px);}
+			100% {transform: translateX(0);}
+		}
+		/* 공지사항 이미*/
+		.main_left{
+			width:350px;
+			height:45px;
+			border:0px solid black;
+			vertical-align: middle;
+			align:center;
+			display:flex;
+			background-color: #809f7b;
+			
+		}
+		/*  공지사항 텍스*/
+		.text_center{
+			vertical-align: middle;
+			display: flex;
+			margin-left: 110px;
+			font-family:"";
+				color:aliceblue;
+		font-size: 12pt;
+			
+		}
+		/*  이미지 , 업데이트 내용 큰틀*/
+		.main_left2{
+			border:0px solid black;
+			width:350px;
+			height:325px;
+			
+			
+			
+		}
+		/* 업데이트내용 이미 */
+		.main_left1{
+			width:350px;
+			height:45px;
+			border:0px solid black;
+			vertical-align: middle;
+			align:center;
+			display:flex;
+			background-color: #809f7b;
+			
+		}
+		/* 공지사항 및 업데이트 내용 텍스트 */
+		.main_left1_1{
+		width: 350px;
+		height: 280px;
+		background-color: #fff;	
+		font-size: 13pt;
+		font-weight: bold;
+		font-family: SeoulNamsanM;
+		}
+		/* 업데이트 내용 텍스트 */
+		.text_center1{
+			vertical-align: middle;
+			display: flex;
+			margin-left: 95px;
+			font-family:"";
+				color:aliceblue;
+		    font-size: 12pt;
+	
+			
+		}
